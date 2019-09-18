@@ -1,0 +1,104 @@
+html {
+  font-size: 15px;
+}
+html,
+body {
+  height: 100%;
+}
+:focus {
+  outline: none !important;
+}
+
+body {
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+
+  color: #000;
+}
+
+hr {
+  border-top: 1px solid #eee;
+  border-radius: 0;
+  border-bottom: 0;
+  margin: 12px 0;
+}
+
+.card-block {
+  width: 500px;
+  margin: 0px auto;
+  height: auto;
+}
+
+.post-block {
+  background: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+}
+.comment-block {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+}
+
+.input-block {
+  padding: 6px 0px;
+}
+
+.input-block textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  padding: 10px;
+}
+
+.btn {
+  background: #5cb85c;
+  color: #fff;
+  border: 0;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.comment > p {
+  color: #676666;
+  margin: 0;
+  padding: 8px 0;
+  border-radius: 0;
+}
+
+.comment > a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #999;
+  padding: 2px 0;
+}
+
+.comment {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+
+.input-box {
+  border: 1px solid #eee;
+  padding: 6px 12px;
+  border-radius: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 12px;
+}
+
+.btn-reply {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.reply-block {
+  display: flex;
+  padding: 12px 0px;
+}

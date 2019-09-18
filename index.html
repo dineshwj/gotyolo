@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>goTyolo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card-block">
+      <div class="post-block">
+        <form id="post-form" onsubmit="wallPost()">
+          <div class="input-block">
+            <textarea
+              rows="4"
+              placeholder="Write a comment here..."
+              cols="50"
+              name="comment"
+              id="post-input"
+            ></textarea>
+          </div>
+          <div class="input-block-submit">
+            <button type="submit" class="btn">Post</button>
+          </div>
+        </form>
+      </div>
+      <hr />
+      <div class="comment-block ">
+        <div class="comment">
+          <p id="post-view"></p>
+          <a href="#">Reply</a>
+        </div>
+        <div class="comment">
+          <p>Comment here.....</p>
+          <a href="#">Reply</a>
+          <div class="reply-block">
+            <input
+              class="input-box"
+              type="text"
+              placeholder="Write a reply..."
+            />
+            <input class="btn-reply" type="submit" value="Reply" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
