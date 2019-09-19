@@ -77,7 +77,7 @@ hr {
 }
 
 .comment {
-  border-bottom: 2px solid #eee;
+  /* border-bottom: 2px solid #eee; */
   padding-bottom: 8px;
 }
 
@@ -101,4 +101,8 @@ hr {
 .reply-block {
   display: flex;
   padding: 12px 0px;
+}
+
+#comment-block {
+  display: none;
 }

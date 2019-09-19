@@ -19,28 +19,31 @@
   <body>
     <div class="card-block">
       <div class="post-block">
-        <form id="post-form" onsubmit="wallPost()">
-          <div class="input-block">
-            <textarea
-              rows="4"
-              placeholder="Write a comment here..."
-              cols="50"
-              name="comment"
-              id="post-input"
-            ></textarea>
-          </div>
-          <div class="input-block-submit">
-            <button type="submit" class="btn">Post</button>
-          </div>
-        </form>
+        <div class="input-block">
+          <textarea
+            rows="4"
+            placeholder="Write a comment here..."
+            cols="50"
+            name="comment"
+            id="post-input"
+          ></textarea>
+        </div>
+        <div class="input-block-submit">
+          <button id="post-enter" type="submit" class="btn">Post</button>
+        </div>
       </div>
       <hr />
-      <div class="comment-block ">
-        <div class="comment">
+      <div id="comment-block" class="comment-block ">
+        <div id="c-block" class="comment">
           <p id="post-view"></p>
           <a href="#">Reply</a>
         </div>
-        <div class="comment">
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+<!-- <div class="comment">
           <p>Comment here.....</p>
           <a href="#">Reply</a>
           <div class="reply-block">
@@ -51,9 +54,4 @@
             />
             <input class="btn-reply" type="submit" value="Reply" />
           </div>
-        </div>
-      </div>
-    </div>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+        </div> -->

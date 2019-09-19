@@ -1,25 +1,32 @@
-function wallPost() {
-  let postForm = document.getElementById("post-form");
-  let postView = document.getElementById("post-view");
-  let postInput = document.getElementById("post-input");
+var postView = document.getElementById("post-view");
+var postInput = document.getElementById("post-input");
+var postCreate = document.getElementById("post-enter");
+var commentBlock = document.getElementById("comment-block");
+var cBlock = document.getElementById("c-block");
 
-  console.log("aaaaaaaa", postForm);
-  console.log("bbbbbbb", postView);
-  console.log("cccccccccc", postInput);
-
-  // postForm.addEventListener("submit", function(event) {
-  //   event.preventDefault();
-
-  //   var commStr = postInput.value;
-
-  //   console.log("comstr", commStr);
-
-  //   saveComment(commStr, function() {
-  //     let comments = [];
-
-  //     localStorage.setItem("comments", JSON.stringify(comments));
-  //     appendToStream(postView, commStr);
-  //     commentInput.value = "";
-  //   });
-  // });
+function postSection() {
+  commentBlock.style.display = "block";
 }
+
+function wallPost() {
+  console.log("ccccc", postInput.value);
+
+  postSection();
+
+  postView.appendChild(document.createTextNode(postInput.value));
+
+  cBlock.appendChild(postView);
+
+  commentBlock.appendChild(cBlock);
+
+  postInput.value = "";
+}
+
+function newPostCreate() {
+  console.log("ddddddddd");
+  if (postInput.value.length > 0) {
+    wallPost();
+  }
+}
+
+postCreate.addEventListener("click", newPostCreate);
